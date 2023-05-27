@@ -366,6 +366,7 @@ main > .container {
 .main__inner {
   display: table-cell;
   vertical-align: middle;
+  padding: 0 1.5em;
 }
 
 footer {
@@ -381,7 +382,7 @@ footer > .container {
 
 .footer__inner {
   display: table-cell;
-  padding: 1em 0;
+  padding: 1em 2em;
 }
 
 /*# sourceMappingURL=main.css.map */
