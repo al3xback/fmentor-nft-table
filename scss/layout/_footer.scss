@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as var;
+
+footer {
+	display: table-footer-group;
+	text-align: center;
+	font-size: 0.75em;
+	font-weight: var.$font-weight-300;
+}
+
+footer > .container {
+	display: table-row;
+}
+
+.footer__inner {
+	display: table-cell;
+	padding: 1em 0;
+}
