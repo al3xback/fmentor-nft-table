@@ -23,29 +23,39 @@
 
 .card__image-box {
 	position: relative;
+	z-index: 1;
 	display: table-cell;
 	padding-bottom: func.em(24);
+	background-color: var.$color-soft-blue;
 	@include mix.border-radius(0.5em);
 	cursor: pointer;
 }
 
-.card__image-box::before {
+.card__image-box::before,
+.card__image-box::after {
 	content: '';
 	position: absolute;
 	inset: 0;
 	bottom: func.em(24);
+	@include mix.border-radius(inherit);
+}
+
+.card__image-box::before {
 	margin: auto;
 	background-color: var.$color-cyan-light;
 	background-image: url('../images/icons/view.svg');
 	background-repeat: no-repeat;
 	background-position: center;
-	@include mix.border-radius(inherit);
 	@include mix.transition(opacity 0.3s);
 	opacity: 0;
 }
 
 .card__image-box:hover::before {
 	opacity: 1;
+}
+
+.card__image-box::after {
+	background-color: var.$color-soft-blue;
 }
 
 .card__image-box img {

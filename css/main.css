@@ -222,27 +222,33 @@ ol {
 
 .card__image-box {
   position: relative;
+  z-index: 1;
   display: table-cell;
   padding-bottom: 1.5em;
+  background-color: hsl(215, 51%, 70%);
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
   border-radius: 0.5em;
   cursor: pointer;
 }
 
-.card__image-box::before {
+.card__image-box::before,
+.card__image-box::after {
   content: "";
   position: absolute;
   inset: 0;
   bottom: 1.5em;
+  -webkit-border-radius: inherit;
+  -moz-border-radius: inherit;
+  border-radius: inherit;
+}
+
+.card__image-box::before {
   margin: auto;
   background-color: hsla(178, 100%, 50%, 0.5);
   background-image: url("../images/icons/view.svg");
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-border-radius: inherit;
-  -moz-border-radius: inherit;
-  border-radius: inherit;
   -webkit-transition: opacity 0.3s;
   -moz-transition: opacity 0.3s;
   -o-transition: opacity 0.3s;
@@ -252,6 +258,10 @@ ol {
 
 .card__image-box:hover::before {
   opacity: 1;
+}
+
+.card__image-box::after {
+  background-color: hsl(215, 51%, 70%);
 }
 
 .card__image-box img {
