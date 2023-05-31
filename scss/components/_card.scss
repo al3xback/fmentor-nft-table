@@ -55,6 +55,7 @@
 
 .card__image-box::after {
 	background-color: var.$color-soft-blue;
+	z-index: -1;
 }
 
 .card__image-box img {

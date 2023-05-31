@@ -261,6 +261,7 @@ ol {
 
 .card__image-box::after {
   background-color: hsl(215, 51%, 70%);
+  z-index: -1;
 }
 
 .card__image-box img {
