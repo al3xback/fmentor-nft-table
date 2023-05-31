@@ -26,7 +26,6 @@
 	z-index: 1;
 	display: table-cell;
 	padding-bottom: func.em(24);
-	background-color: var.$color-soft-blue;
 	@include mix.border-radius(0.5em);
 	cursor: pointer;
 }
