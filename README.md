@@ -13,7 +13,7 @@ Users should be able to:
 
 ### Links
 
--   Live Site URL: https://al3xback.github.io/fmentor-nft-inlineblock/
+-   Live Site URL: https://al3xback.github.io/fmentor-nft-table/
 
 ## My process
 
