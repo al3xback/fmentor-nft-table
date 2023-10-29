@@ -20,7 +20,7 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- Legacy table approach
+- Display table approach
 - Mobile-first workflow
 
 ## Author
