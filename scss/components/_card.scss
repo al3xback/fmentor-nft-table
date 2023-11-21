@@ -10,8 +10,8 @@
 	margin: func.em(40) auto;
 	background-color: var.$color-dark-blue-2;
 	text-align: left;
-	@include mix.border-radius(15px);
-	@include mix.box-shadow(0 func.em(25) func.em(50) rgba(0, 0, 0, 0.1));
+	border-radius: 15px;
+	box-shadow: 0 func.em(25) func.em(50) rgba(0, 0, 0, 0.1);
 }
 
 .card__inner {
@@ -27,7 +27,7 @@
 	z-index: 1;
 	display: table-cell;
 	padding-bottom: func.em(24);
-	@include mix.border-radius(0.5em);
+	border-radius: 0.5em;
 	cursor: pointer;
 }
 
@@ -37,7 +37,7 @@
 	position: absolute;
 	inset: 0;
 	bottom: func.em(24);
-	@include mix.border-radius(inherit);
+	border-radius: inherit;
 }
 
 .card__image-box::before {
@@ -46,7 +46,7 @@
 	background-image: url('../images/icons/view.svg');
 	background-repeat: no-repeat;
 	background-position: center;
-	@include mix.transition(opacity 0.3s);
+	transition: opacity 0.3s;
 	opacity: 0;
 }
 
@@ -62,7 +62,7 @@
 .card__image-box img {
 	width: 100%;
 	height: auto;
-	@include mix.border-radius(inherit);
+	border-radius: inherit;
 }
 
 .card__content {
