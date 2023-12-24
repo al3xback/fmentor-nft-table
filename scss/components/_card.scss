@@ -38,6 +38,11 @@
 }
 
 .card__image-box::before {
+	background-color: var.$color-soft-blue;
+	z-index: -1;
+}
+
+.card__image-box::after {
 	background-color: var.$color-cyan-light;
 	background-image: url('../images/icons/view.svg');
 	background-repeat: no-repeat;
@@ -46,13 +51,8 @@
 	transition: opacity 0.3s;
 }
 
-.card__image-box:hover::before {
+.card__image-box:hover::after {
 	opacity: 1;
-}
-
-.card__image-box::after {
-	background-color: var.$color-soft-blue;
-	z-index: -1;
 }
 
 .card__image-box img {
