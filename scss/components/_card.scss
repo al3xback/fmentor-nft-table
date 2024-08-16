@@ -16,7 +16,7 @@
 	display: table-row-group;
 }
 
-.card__image {
+.card__inner > * {
 	display: table-row;
 }
 
@@ -59,10 +59,6 @@
 	width: 100%;
 	height: auto;
 	border-radius: inherit;
-}
-
-.card__content {
-	display: table-row;
 }
 
 .card__content-box {
@@ -111,7 +107,7 @@
 	border-top: 1px solid var.$color-dark-blue-3;
 }
 
-.card__author .cell {
+.card__author .table-cell {
 	vertical-align: middle;
 }
 
@@ -129,6 +125,10 @@
 
 .card__author-desc {
 	font-size: func.em(15);
+}
+
+.card__author-desc .btn--link {
+	display: inline;
 }
 
 @media (min-width: 48em) {
